@@ -9,6 +9,7 @@ import (
 )
 
 func run(host string) (bool, string) {
+	// CVE-2021-25646 利用 Demo
 	uri := "/druid/indexer/v1/sampler"
 	method := "POST"
 	url := host + uri
